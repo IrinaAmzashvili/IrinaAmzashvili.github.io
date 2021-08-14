@@ -12,11 +12,15 @@
     padding: 90px;
 }
 
-.devicon {
-    font-size: 70px;
-}
-
 .technologies-div {
     display: flex;
     flex-wrap: wrap;
+    width: 900px;
+    align-content: space-between;
+    height: 400px;
+}
+
+.devicon {
+    font-size: 70px;
+    margin-right: 40px;
 }
