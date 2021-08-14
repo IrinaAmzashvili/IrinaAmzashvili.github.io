@@ -3874,10 +3874,13 @@ input, select, textarea {
 
 	#intro {
 		background-attachment: fixed;
-		background-image: url("images/intro.svg");
-		background-position: top right;
+		/* background-image: url("images/intro.svg"); */
+		background-image: url("images/code-background.png");
+		/* background-position: top right; */
+		background-position: right;
 		background-repeat: no-repeat;
-		background-size: 100% 100%;
+		/* background-size: 100% 100%; */
+		object-fit: cover;
 	}
 
 		#intro p {

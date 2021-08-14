@@ -1,0 +1,22 @@
+.about-me-div {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.headshot {
+    width: 500px;
+}
+
+.about-me-text-div {
+    padding: 90px;
+}
+
+.devicon {
+    font-size: 70px;
+}
+
+.technologies-div {
+    display: flex;
+    flex-wrap: wrap;
+}
