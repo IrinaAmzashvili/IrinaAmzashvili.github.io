@@ -59,3 +59,53 @@ body {
 .skills-h2 {
     color: #1E1E1E;
 }
+
+@media screen and (max-width: 1410px) and (min-width: 1281px) {
+    .about-me-text-div {
+        padding: 70px;
+    }
+}
+
+@media screen and (max-width: 1060px) and (min-width: 848px) {
+    .about-me-text-div {
+        padding: 40px;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .spotlights > section.project-1-section, section.project-3-section {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+
+    .spotlights > section.project-2-section {
+        flex-direction: column;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 848px) {
+    .about-me-div {
+        flex-direction: column;
+    }
+
+    .headshot {
+        width: 100%;
+    }
+
+    .about-me-text-div {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .technologies-div {
+        width: 446px;
+        margin-bottom: 0;
+    }
+
+    #skills {
+        height: 570px;
+    }
+}
