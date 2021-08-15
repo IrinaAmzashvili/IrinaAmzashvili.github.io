@@ -60,3 +60,9 @@ h1.major {
         flex-direction: column;
     }
 }
+
+@media screen and (max-width: 480px) {
+    #header > nav > ul > li:first-child {
+        margin-left: 1.5em;
+    }
+}
