@@ -8,6 +8,11 @@ h1.major:after {
     background-image: linear-gradient(to right, #0DA3BA, #53CBCF);
 }
 
+.header-div {
+    display: flex;
+    justify-content: space-between;
+}
+
 h1.major {
     color: #1E1E1E;
 }
@@ -22,9 +27,9 @@ h1.major {
 }
 
 .project-links-div {
-    position: absolute;
+    /* position: absolute;
     top: 97px;
-    right: 74px;
+    right: 74px; */
 }
 
 .project-links-div > * {
