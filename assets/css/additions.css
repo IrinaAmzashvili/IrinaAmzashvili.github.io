@@ -35,10 +35,14 @@
     font-size: 100px;
 }
 
-.dark-text * {
+/* .dark-text * {
     color: #1E1E1E;
 }
 
 .dark-text a {
+    color: #1E1E1E;
+} */
+
+.skills-h2 {
     color: #1E1E1E;
 }

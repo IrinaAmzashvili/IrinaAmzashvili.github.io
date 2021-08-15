@@ -1,0 +1,40 @@
+.project-body {
+    /* background: #046E94; */
+    background: white;
+    color: #1E1E1E;
+}
+
+h1.major:after {
+    background-image: linear-gradient(to right, #0DA3BA, #53CBCF);
+}
+
+h1.major {
+    color: #1E1E1E;
+}
+
+#header {
+    /* background-color: #0DA3BA; */
+    background-color: #046E94;
+}
+
+.wrapper.alt {
+    background-color: #1E1E1E;
+}
+
+.project-links-div {
+    position: absolute;
+    top: 97px;
+    right: 74px;
+}
+
+.project-links-div > * {
+    color: #aab3bb;
+}
+
+.project-links-div > a:hover {
+    color: #1E1E1E;
+}
+
+.project-div {
+    position: relative;
+}
