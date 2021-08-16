@@ -43,3 +43,26 @@ h1.major {
 .project-div {
     position: relative;
 }
+
+@media screen and (max-width: 870px) {
+    .header-div {
+        flex-direction: column-reverse;
+    }
+
+    .project-links-div {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    #header > nav > ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #header > nav > ul > li:first-child {
+        margin-left: 1.5em;
+    }
+}

@@ -1,1 +1,0 @@
-# IrinaAmzashvili.github.io

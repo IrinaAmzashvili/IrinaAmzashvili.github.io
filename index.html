@@ -14,17 +14,17 @@
     />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/additions.css" />
+    <noscript
+    ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css"
+    />
     <link
       rel="shortcut icon"
       type="image/ico"
       href="images/favicon_io/favicon.ico"
-    />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css"
     />
   </head>
   <body class="is-preload">
@@ -51,7 +51,10 @@
           <h1>Irina Amzashvili</h1>
           <p>Software Engineer</p>
           <ul class="actions">
-            <li><a href="#aboutme" class="button scrolly">Learn more</a></li>
+            <!-- <li><a href="#aboutme" class="button scrolly"> -->
+            <li><a href="#aboutme" class="scrolly down-arrow">
+              <i class="fas fa-chevron-down"></i>
+            </a></li>
           </ul>
         </div>
       </section>
@@ -77,7 +80,7 @@
               </p>
               <ul class="actions">
                 <li>
-                  <a href="#skills" class="button scrolly white">Resume</a>
+                  <a href="" class="button scrolly white">Resume</a>
                 </li>
               </ul>
             </div>
@@ -234,7 +237,7 @@
             <label for="Heroku">
               <i class="devicon-heroku-original-wordmark colored devicon"></i>
             </label>
-            <label for="Sequelize">
+            <label class="sequelize-label" for="Sequelize">
               <i
                 class="
                   devicon-sequelize-plain-wordmark
@@ -291,23 +294,25 @@
             <section>
               <h2>Get in touch</h2>
               <p>Feel free to reach out to me, I'd love to hear from you!</p>
-              <form method="post" action="#">
+              <form method="POST" action="https://formspree.io/f/xknkpjpb">
                 <div class="fields">
                   <div class="field half">
                     <label for="name">Name</label>
-                    <input type="text" name="name" id="name" />
+                    <input type="text" name="name" id="name" required/>
                   </div>
                   <div class="field half">
                     <label for="email">Email</label>
-                    <input type="text" name="email" id="email" />
+                    <input type="text" name="email" id="email" required/>
                   </div>
                   <div class="field">
                     <label for="message">Message</label>
-                    <textarea name="message" id="message" rows="5"></textarea>
+                    <textarea name="message" id="message" rows="5" required></textarea>
                   </div>
                 </div>
                 <ul class="actions">
-                  <li><a href="" class="button submit">Send Message</a></li>
+                  <li>
+                    <button type="submit" class="button">Send Message</button>
+                  </li>
                 </ul>
               </form>
             </section>

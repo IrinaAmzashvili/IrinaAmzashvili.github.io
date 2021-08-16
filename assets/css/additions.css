@@ -2,9 +2,21 @@ body {
     background: #046E94;
 }
 
+textarea {
+    resize: none;
+}
+
+.fa-chevron-down {
+    font-size: 25px;
+    color: #ffffff !important;
+}
+
+.down-arrow {
+    border-bottom: none;
+}
+
 .about-me-div {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
 }
 
@@ -16,10 +28,6 @@ body {
     padding: 90px;
     color: white;
 }
-
-/* button.button.white {
-    border-color: white;
-} */
 
 .spotlights > section > .image:before {
     background: rgba(4, 110, 148, 0.9);
@@ -42,19 +50,17 @@ body {
 
 .devicon-svg {
     width: 75px;
+    margin-right: 35px;
+}
+
+.sequelize-label {
+    width: 110px;
 }
 
 .sequelize-icon {
     font-size: 100px;
+    margin-right: 35px;
 }
-
-/* .dark-text * {
-    color: #1E1E1E;
-}
-
-.dark-text a {
-    color: #1E1E1E;
-} */
 
 .skills-h2 {
     color: #1E1E1E;
@@ -101,11 +107,71 @@ body {
 
 @media screen and (max-width: 660px) {
     .technologies-div {
-        width: 446px;
+        width: 100%;
         margin-bottom: 0;
     }
 
     #skills {
-        height: 570px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    #skills {
+        height: 550px;
+    }
+}
+@media screen and (max-width: 613px) {
+    #skills {
+        /* height: 600px; */
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .technologies-div {
+        width: 446px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .technologies-div {
+        width: 100%;
+    }
+
+    #skills {
+        height: 650px;
+    }
+
+    .devicon {
+        margin-right: 35px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .devicon {
+        font-size: 45px;
+    }
+
+    .devicon-svg {
+        width: 50px;
+    }
+
+    .sequelize-label {
+        width: 80px;
+    }
+
+    .sequelize-icon {
+        font-size: 70px;
+    }
+
+    #skills {
+        height: 445px;
+    }
+}
+
+@media screen and (max-width: 384px) {
+    #skills {
+        height: 500px;
     }
 }
