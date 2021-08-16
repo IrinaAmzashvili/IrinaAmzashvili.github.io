@@ -2,6 +2,10 @@ body {
     background: #046E94;
 }
 
+textarea {
+    resize: none;
+}
+
 .fa-chevron-down {
     font-size: 25px;
     color: #ffffff !important;
