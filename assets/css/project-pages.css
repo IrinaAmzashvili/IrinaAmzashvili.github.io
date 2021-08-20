@@ -9,7 +9,7 @@
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 .project-header-div:after {
@@ -39,9 +39,16 @@ h1.major {
     margin: 0;
 }
 
+.project-links-div > * {
+    color: white;
+}
+
+.project-links-div > a:hover {
+    color: #7db3c2;
+}
+
 .project-text-div {
-    display: flex;
-    justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 #header {
@@ -56,13 +63,25 @@ h1.major {
     position: relative;
 }
 
-@media screen and (max-width: 870px) {
-    .project-text-div {
-        flex-direction: column-reverse;
+@media screen and (max-width: 1030px) {
+    .project-header-div.scs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-links-div.scs {
+        margin: 19px 0;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .project-header-div {
+        display: flex;
+        flex-direction: column;
     }
 
     .project-links-div {
-        margin-bottom: 20px;
+        margin: 19px 0;
     }
 }
 
