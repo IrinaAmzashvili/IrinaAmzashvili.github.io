@@ -1,56 +1,87 @@
 .project-body {
-    /* background: #046E94; */
-    background: white;
-    color: #1E1E1E;
+    background: #046E94;
+}
+
+.project-header-div {
+    margin: 0 0 1.3em 0;
+    position: relative;
+    padding-bottom: 0.35em;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.project-header-div:after {
+    background-image: -moz-linear-gradient(to right, #0DA3BA, #53CBCF);
+    background-image: -webkit-linear-gradient(to right, #0DA3BA, #53CBCF);
+    background-image: -ms-linear-gradient(to right, #0DA3BA, #53CBCF);
+    background-image: linear-gradient(to right, #0DA3BA, #53CBCF);
+    -moz-transition: max-width 0.2s ease;
+    -webkit-transition: max-width 0.2s ease;
+    -ms-transition: max-width 0.2s ease;
+    transition: max-width 0.2s ease;
+    border-radius: 0.2em;
+    bottom: 0;
+    content: '';
+    height: 0.05em;
+    position: absolute;
+    right: 0;
+    width: 100%;
 }
 
 h1.major:after {
-    background-image: linear-gradient(to right, #0DA3BA, #53CBCF);
-}
-
-.header-div {
-    display: flex;
-    justify-content: space-between;
+    /* background-image:linear-gradient(to right, #0DA3BA, #53CBCF); */
+    background-image: none;
 }
 
 h1.major {
-    color: #1E1E1E;
+    margin: 0;
+}
+
+.project-links-div > * {
+    color: white;
+}
+
+.project-links-div > a:hover {
+    color: #7db3c2;
+}
+
+.project-text-div {
+    margin-bottom: 50px;
 }
 
 #header {
-    /* background-color: #0DA3BA; */
-    background-color: #046E94;
+    background-color: #0EAEC7;
 }
 
 .wrapper.alt {
     background-color: #1E1E1E;
 }
 
-.project-links-div {
-    /* position: absolute;
-    top: 97px;
-    right: 74px; */
-}
-
-.project-links-div > * {
-    color: #aab3bb;
-}
-
-.project-links-div > a:hover {
-    color: #1E1E1E;
-}
-
 .project-div {
     position: relative;
 }
 
-@media screen and (max-width: 870px) {
-    .header-div {
-        flex-direction: column-reverse;
+@media screen and (max-width: 1030px) {
+    .project-header-div.scs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-links-div.scs {
+        margin: 19px 0;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .project-header-div {
+        display: flex;
+        flex-direction: column;
     }
 
     .project-links-div {
-        margin-bottom: 20px;
+        margin: 19px 0;
     }
 }
 
