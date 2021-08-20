@@ -1,7 +1,5 @@
 .project-body {
-    /* background: #046E94; */
-    background: white;
-    color: #1E1E1E;
+    background: #046E94;
 }
 
 h1.major:after {
@@ -13,31 +11,12 @@ h1.major:after {
     justify-content: space-between;
 }
 
-h1.major {
-    color: #1E1E1E;
-}
-
 #header {
-    /* background-color: #0DA3BA; */
-    background-color: #046E94;
+    background-color: #0EAEC7;
 }
 
 .wrapper.alt {
     background-color: #1E1E1E;
-}
-
-.project-links-div {
-    /* position: absolute;
-    top: 97px;
-    right: 74px; */
-}
-
-.project-links-div > * {
-    color: #aab3bb;
-}
-
-.project-links-div > a:hover {
-    color: #1E1E1E;
 }
 
 .project-div {
