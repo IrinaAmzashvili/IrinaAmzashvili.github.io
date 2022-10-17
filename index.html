@@ -27,6 +27,11 @@
       href="images/favicon_io/favicon.ico"
     />
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+      function onSubmit(token) {
+        document.getElementById("contact-form").submit();
+      }
+    </script>
   </head>
   <body class="is-preload">
     <!-- Sidebar -->
@@ -297,7 +302,7 @@
             <section>
               <h2>Get in touch</h2>
               <p>Feel free to reach out to me, I'd love to hear from you!</p>
-              <form method="POST" action="https://formspree.io/f/xknkpjpb">
+              <form id="contact-form" method="POST" action="https://formspree.io/f/xknkpjpb">
                 <div class="fields">
                   <div class="field half">
                     <label for="name">Name</label>
@@ -317,10 +322,9 @@
                     ></textarea>
                   </div>
                 </div>
-                <div class="g-recaptcha" data-sitekey="6Ld0kIsiAAAAACDvjLeEmBqAcKBHGLxDdkZy9Me-"></div>
                 <ul class="actions">
                   <li>
-                    <button type="submit" class="button">Send Message</button>
+                    <button type="submit" class="g-recaptcha button" data-sitekey="6Ld0kIsiAAAAACDvjLeEmBqAcKBHGLxDdkZy9Me-" data-callback="onSubmit">Submit</button>
                   </li>
                 </ul>
               </form>
